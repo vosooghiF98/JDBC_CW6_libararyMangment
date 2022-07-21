@@ -2,10 +2,7 @@ package org.cw6_2.repository;
 
 import org.cw6_2.entity.Writer;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class WriterRepository {
     private final Connection connection = DriverManager
@@ -23,6 +20,27 @@ public class WriterRepository {
         preparedStatement.setString(2,writer.getLastName());
         preparedStatement.executeUpdate();
         preparedStatement.close();
+    }
+
+    public Writer selectById (int id) throws SQLException {
+        String query = """
+                select * from writer where id = ?;
+                """;
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setInt(1,id);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        preparedStatement.close();
+        if (resultSet.next()){
+            Writer writer = new Writer();
+            writer.setId(resultSet.getInt("id"));
+            writer.setFirstName(resultSet.getString("first_name"));
+            writer.setLastName(resultSet.getString("last_name"));
+            resultSet.close();
+            return writer;
+        }else {
+            resultSet.close();
+            return null;
+        }
     }
 
 

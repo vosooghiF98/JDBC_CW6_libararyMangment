@@ -1,12 +1,12 @@
 package org.cw6_2.repository;
 
+import org.cw6_2.config.DBConfig;
 import org.cw6_2.entity.Writer;
 
 import java.sql.*;
 
 public class WriterRepository {
-    private final Connection connection = DriverManager
-            .getConnection("jdbc:postgresql://localhost:5432/","postgres","a*1294278F");
+
     public WriterRepository() throws SQLException {
     }
 
@@ -15,7 +15,8 @@ public class WriterRepository {
         insert into writer (first_name,last_name)
         values (?,?);
         """;
-        PreparedStatement preparedStatement = connection.prepareStatement(query);
+
+        PreparedStatement preparedStatement = DBConfig.connection.prepareStatement(query);
         preparedStatement.setString(1,writer.getFirstName());
         preparedStatement.setString(2,writer.getLastName());
         preparedStatement.executeUpdate();
@@ -26,7 +27,7 @@ public class WriterRepository {
         String query = """
                 select * from writer where id = ?;
                 """;
-        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        PreparedStatement preparedStatement = DBConfig.connection.prepareStatement(query);
         preparedStatement.setInt(1,id);
         ResultSet resultSet = preparedStatement.executeQuery();
         preparedStatement.close();

@@ -4,6 +4,7 @@ public class Writer {
     private int id;
     private String firstName;
     private String lastName;
+    private int [] novelsId;
 
     public int getId() {
         return id;
@@ -27,5 +28,13 @@ public class Writer {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public int[] getNovelsId() {
+        return novelsId;
+    }
+
+    public void setNovelsId(int[] novelsId) {
+        this.novelsId = novelsId;
     }
 }

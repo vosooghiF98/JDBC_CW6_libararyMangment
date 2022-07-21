@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e69e16d-68c2-42b2-a24a-4c31e82c834c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/repository/ConsumerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/repository/NovelRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cw6_2/config/DBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/config/DBConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cw6_2/repository/WriterRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/repository/WriterRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cw6_2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cw6_2/entity/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/entity/Writer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +47,26 @@
     ]
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.cw6_2.Main" />
+      <module name="JDBC_CW6_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.cw6_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -54,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658400832053</updated>
-      <workItem from="1658400834434" duration="4288000" />
+      <workItem from="1658400834434" duration="6174000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1658402162762</created>
@@ -91,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658404264827</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update code &amp; add ConsumerRepository class">
+      <created>1658405337943</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658405337943</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +131,7 @@
     <MESSAGE value="implement addWriter method" />
     <MESSAGE value="implement selectById method in Writer class" />
     <MESSAGE value="update code" />
-    <option name="LAST_COMMIT_MESSAGE" value="update code" />
+    <MESSAGE value="update code &amp; add ConsumerRepository class" />
+    <option name="LAST_COMMIT_MESSAGE" value="update code &amp; add ConsumerRepository class" />
   </component>
 </project>

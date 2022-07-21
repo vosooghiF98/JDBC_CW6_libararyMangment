@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBConfig {
-    public static final Connection connection;
+    private static final Connection connection;
 
     static {
         try {
@@ -14,5 +14,9 @@ public class DBConfig {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public static Connection getConnection() {
+        return connection ;
     }
 }

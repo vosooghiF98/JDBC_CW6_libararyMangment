@@ -6,17 +6,12 @@ import org.cw6_2.entity.Writer;
 import java.sql.*;
 
 public class WriterRepository {
-
-    public WriterRepository() throws SQLException {
-    }
-
     public void addWriter(Writer writer) throws SQLException {
         String query = """
         insert into writer (first_name,last_name)
         values (?,?);
         """;
-
-        PreparedStatement preparedStatement = DBConfig.connection.prepareStatement(query);
+        PreparedStatement preparedStatement = DBConfig.getConnection().prepareStatement(query);
         preparedStatement.setString(1,writer.getFirstName());
         preparedStatement.setString(2,writer.getLastName());
         preparedStatement.executeUpdate();
@@ -27,7 +22,7 @@ public class WriterRepository {
         String query = """
                 select * from writer where id = ?;
                 """;
-        PreparedStatement preparedStatement = DBConfig.connection.prepareStatement(query);
+        PreparedStatement preparedStatement = DBConfig.getConnection().prepareStatement(query);
         preparedStatement.setInt(1,id);
         ResultSet resultSet = preparedStatement.executeQuery();
         preparedStatement.close();

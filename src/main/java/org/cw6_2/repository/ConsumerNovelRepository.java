@@ -19,4 +19,24 @@ public class ConsumerNovelRepository {
         preparedStatement.executeUpdate();
         preparedStatement.close();
     }
+
+    public ResultSet loadById(int id) throws SQLException {
+        String query = """
+                select * from novel where id = ? and quantity>0;
+                """;
+        PreparedStatement preparedStatement = DBConfig.getConnection().prepareStatement(query);
+        preparedStatement.setInt(1, id);
+        return preparedStatement.executeQuery();
+    }
+
+    public void update(int id) throws SQLException {
+        String query2 = """
+                    update novel set quantity = quantity - 1 where id = ?;                 
+                    """;
+        PreparedStatement preparedStatement = DBConfig.getConnection().prepareStatement(query2);
+        preparedStatement.setInt(1,id);
+        preparedStatement.executeUpdate();
+        preparedStatement.close();
+    }
+
 }

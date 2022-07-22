@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e69e16d-68c2-42b2-a24a-4c31e82c834c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/entity/ConsumerNovel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/repository/ConsumerNovelRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/service/ConsumerNovelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/service/ConsumerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/service/NovelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/service/WriterService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="2e69e16d-68c2-42b2-a24a-4c31e82c834c" name="Changes" comment="creat develop branch &amp; replace queries to ConsumerNovelRepository from ConsumerNovelService">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cw6_2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cw6_2/entity/Novel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/entity/Novel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cw6_2/entity/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/entity/Writer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cw6_2/repository/ConsumerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/repository/ConsumerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cw6_2/repository/NovelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/repository/NovelRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cw6_2/repository/WriterRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/repository/WriterRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cw6_2/repository/ConsumerNovelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/repository/ConsumerNovelRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cw6_2/service/ConsumerNovelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/service/ConsumerNovelService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,6 +205,17 @@
     <MESSAGE value="add idea files to gitignore2" />
     <MESSAGE value="add idea files to gitignore3" />
     <MESSAGE value="commit work space" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit work space" />
+    <MESSAGE value="creat develop branch &amp; replace queries to ConsumerNovelRepository from ConsumerNovelService" />
+    <option name="LAST_COMMIT_MESSAGE" value="creat develop branch &amp; replace queries to ConsumerNovelRepository from ConsumerNovelService" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.postgresql.util.PSQLException" package="org.postgresql.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

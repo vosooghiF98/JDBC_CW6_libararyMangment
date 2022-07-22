@@ -11,26 +11,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class ConsumerNovelService {
-    private ConsumerRepository consumerRepository = new ConsumerRepository();
-    private NovelRepository novelRepository = new NovelRepository();
     private ConsumerNovelRepository consumerNovelRepository = new ConsumerNovelRepository();
 
     public void buy(int consumerId, Novel novel) throws SQLException {
-        String query = """
-                select * from novel where id = ? and quantity>0;
-                """;
-        PreparedStatement preparedStatement = DBConfig.getConnection().prepareStatement(query);
-        preparedStatement.setInt(1, novel.getId());
-        ResultSet resultSet = preparedStatement.executeQuery();
-        if (resultSet.next()) {
+        consumerNovelRepository.loadById(novel.getId());
+        if (consumerNovelRepository.loadById(novel.getId()).next()) {
             consumerNovelRepository.save(consumerId, novel.getId());
-            String query2 = """
-                    update novel set quantity = quantity - 1 where id = ?;                 
-                    """;
-            preparedStatement = DBConfig.getConnection().prepareStatement(query2);
-            preparedStatement.setInt(1,novel.getId());
-            preparedStatement.executeUpdate();
-            preparedStatement.close();
+            consumerNovelRepository.update(novel.getId());
             novel.setQuantity(novel.getQuantity()-1);
         }
     }

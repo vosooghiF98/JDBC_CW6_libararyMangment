@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class NovelRepository {
-    public void addNovel (Novel novel) throws SQLException {
+    public void save(Novel novel) throws SQLException {
         String query = """
                 insert into novel (name, quantity, writer_id) 
                 values (?,?,?);
@@ -16,12 +16,12 @@ public class NovelRepository {
         PreparedStatement preparedStatement = DBConfig.getConnection().prepareStatement(query);
         preparedStatement.setString(1,novel.getName());
         preparedStatement.setInt(2,novel.getQuantity());
-        preparedStatement.setInt(3,novel.getWriterId());
+        preparedStatement.setInt(3,novel.getWriter().getId());
         preparedStatement.executeUpdate();
         preparedStatement.close();
     }
 
-    public Novel selectByID (int id) throws SQLException {
+    public Novel loadById(int id) throws SQLException {
         String query = """
                 select * from novel where id = ?;
                 """;
@@ -34,7 +34,6 @@ public class NovelRepository {
             novel.setId(resultSet.getInt("id"));
             novel.setName(resultSet.getString("name"));
             novel.setQuantity(resultSet.getInt("quantity"));
-            novel.setWriterId(resultSet.getInt("writer_id"));
             resultSet.close();
             return novel;
         }else {

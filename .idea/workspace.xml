@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e69e16d-68c2-42b2-a24a-4c31e82c834c" name="Changes" comment="" />
+    <list default="true" id="2e69e16d-68c2-42b2-a24a-4c31e82c834c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/entity/ConsumerNovel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/repository/ConsumerNovelRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/service/ConsumerNovelService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/service/ConsumerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/service/NovelService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/service/WriterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cw6_2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cw6_2/entity/Novel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/entity/Novel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cw6_2/entity/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/entity/Writer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cw6_2/repository/ConsumerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/repository/ConsumerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cw6_2/repository/NovelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/repository/NovelRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cw6_2/repository/WriterRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cw6_2/repository/WriterRepository.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +88,8 @@
       <workItem from="1658400834434" duration="6623000" />
       <workItem from="1658419961808" duration="1516000" />
       <workItem from="1658469688296" duration="1048000" />
-      <workItem from="1658480863826" duration="2842000" />
+      <workItem from="1658480863826" duration="3804000" />
+      <workItem from="1658488658507" duration="5264000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1658402162762</created>
@@ -152,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658483814703</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="commit work space">
+      <created>1658484251181</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1658484251181</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +215,7 @@
     <MESSAGE value="add idea files to gitignore" />
     <MESSAGE value="add idea files to gitignore2" />
     <MESSAGE value="add idea files to gitignore3" />
-    <option name="LAST_COMMIT_MESSAGE" value="add idea files to gitignore3" />
+    <MESSAGE value="commit work space" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit work space" />
   </component>
 </project>

@@ -4,7 +4,7 @@ public class Novel {
     private int id;
     private String name;
     private int quantity;
-    private int writerId;
+    private Writer writer;
 
     public int getId() {
         return id;
@@ -30,11 +30,11 @@ public class Novel {
         this.quantity = quantity;
     }
 
-    public int getWriterId() {
-        return writerId;
+    public Writer getWriter() {
+        return writer;
     }
 
-    public void setWriterId(int writerId) {
-        this.writerId = writerId;
+    public void setWriter(Writer writer) {
+        this.writer = writer;
     }
 }

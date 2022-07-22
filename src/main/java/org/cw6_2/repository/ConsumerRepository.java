@@ -2,14 +2,13 @@ package org.cw6_2.repository;
 
 import org.cw6_2.config.DBConfig;
 import org.cw6_2.entity.Consumer;
-import org.cw6_2.entity.Writer;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class ConsumerRepository {
-    public void addConsumer(Consumer consumer) throws SQLException {
+    public void save(Consumer consumer) throws SQLException {
         String query = """
         insert into consumer (first_name,last_name)
         values (?,?);
@@ -21,7 +20,7 @@ public class ConsumerRepository {
         preparedStatement.close();
     }
 
-    public Consumer selectById (int id) throws SQLException {
+    public Consumer loadById(int id) throws SQLException {
         String query = """
                 select * from consumer where id = ?;
                 """;

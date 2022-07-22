@@ -1,10 +1,12 @@
 package org.cw6_2.entity;
 
+import java.util.ArrayList;
+
 public class Writer {
     private int id;
     private String firstName;
     private String lastName;
-    private int [] novelsId;
+    private ArrayList<Novel> novels = new ArrayList<>();
 
     public int getId() {
         return id;
@@ -30,11 +32,18 @@ public class Writer {
         this.lastName = lastName;
     }
 
-    public int[] getNovelsId() {
-        return novelsId;
+    public ArrayList<Novel> getNovels() {
+        return novels;
     }
 
-    public void setNovelsId(int[] novelsId) {
-        this.novelsId = novelsId;
+    public void setNovels(ArrayList<Novel> novels) {
+        this.novels = novels;
+    }
+
+    public void addNovel(Novel novel){
+        this.novels.add(novel);
+    }
+    public void removeNovel(Novel novel){
+        this.novels.remove(novel);
     }
 }

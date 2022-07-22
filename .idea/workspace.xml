@@ -21,6 +21,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -74,7 +75,7 @@
       <workItem from="1658400834434" duration="6623000" />
       <workItem from="1658419961808" duration="1516000" />
       <workItem from="1658469688296" duration="1048000" />
-      <workItem from="1658480863826" duration="909000" />
+      <workItem from="1658480863826" duration="2396000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1658402162762</created>
@@ -132,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658481085950</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add idea files to gitignore">
+      <created>1658482195684</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1658482195684</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +177,7 @@
     <MESSAGE value="update code &amp; add ConsumerRepository class" />
     <MESSAGE value="update code &amp; add NovelRepository class" />
     <MESSAGE value="add idea &amp; target files to gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add idea &amp; target files to gitignore" />
+    <MESSAGE value="add idea files to gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add idea files to gitignore" />
   </component>
 </project>
